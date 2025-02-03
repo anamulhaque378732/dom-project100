@@ -1,0 +1,56 @@
+#root {
+  background: rgb(204, 82, 82);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+#cng-btn {
+  background: rgb(170, 85, 24);
+  padding: 10px;
+  font-size: 32px;
+}
+
+#cng-btn:hover {
+  background: rgb(138, 138, 97);
+  font-style: italic;
+}
+.toast-messsage {
+  position: fixed;
+  z-index: 999;
+  top: 2rem;
+  right: 2rem;
+  background-color: rgb(52, 182, 139);
+  color: rgb(31, 21, 21);
+  border: 1px solid white;
+  border-radius: 0.22rem;
+  padding: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 0 8px 0 rgb(230, 198, 198);
+}
+.toast-messsage-slide-in {
+  animation: toast-animation-in 0.5s ease-in;
+}
+.toast-messsage-slide-out {
+  animation: toast-animation-out 0.5s ease-out;
+}
+
+@keyframes toast-animation-in {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes toast-animation-out {
+  from {
+    transform: translateX(0px);
+    opacity: 1px;
+  }
+  to {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+}
